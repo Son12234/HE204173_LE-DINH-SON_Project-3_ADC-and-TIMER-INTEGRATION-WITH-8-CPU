@@ -1,0 +1,291 @@
+
+*** Running vivado
+    with args -log timer_adc8_cpu_if.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source timer_adc8_cpu_if.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 21-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Nov  3 00:11:25 2026
+# Process ID         : 13252
+# Current directory  : C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.runs/synth_1
+# Command line       : vivado.exe -log timer_adc8_cpu_if.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source timer_adc8_cpu_if.tcl
+# Log file           : C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.runs/synth_1/timer_adc8_cpu_if.vds
+# Journal file       : C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.runs/synth_1\vivado.jou
+# Running On         : DINHSON
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
+# CPU Frequency      : 1896 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16985 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18058 MB
+# Available Virtual  : 7273 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Nov  3 00:11:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source timer_adc8_cpu_if.tcl -notrace
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 583.305 ; gain = 268.094
+Command: synth_design -top timer_adc8_cpu_if -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8116
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.996 ; gain = 579.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'timer_adc8_cpu_if' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_cpu_if.v:11]
+INFO: [Synth 8-6157] synthesizing module 'timer_adc8_top' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_top.v:10]
+INFO: [Synth 8-6157] synthesizing module 'apb_regs8' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/apb_regs8.v:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/apb_regs8.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'apb_regs8' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/apb_regs8.v:11]
+INFO: [Synth 8-6157] synthesizing module 'timer8' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer8.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'timer8' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'sar_adc_ctrl' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sar_adc_ctrl.v:11]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sar_adc_ctrl' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sar_adc_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo' [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sync_fifo.v:10]
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sync_fifo.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'timer_adc8_top' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'timer_adc8_cpu_if' (0#1) [C:/Users/admin/Downloads/timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_cpu_if.v:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1471.992 ; gain = 705.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1471.992 ; gain = 705.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1471.992 ; gain = 705.734
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1471.992 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.srcs/constrs_1/imports/constraints/timer_adc8_vivado.xdc]
+Finished Parsing XDC File [C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.srcs/constrs_1/imports/constraints/timer_adc8_vivado.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.srcs/constrs_1/imports/constraints/timer_adc8_vivado.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/timer_adc8_cpu_if_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/timer_adc8_cpu_if_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1549.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1549.227 ; gain = 782.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1549.227 ; gain = 782.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1549.227 ; gain = 782.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sar_adc_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              001 |                               00
+               ST_SAMPLE |                              010 |                               01
+              ST_CONVERT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sar_adc_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1549.227 ; gain = 782.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 14    
+	   3 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 19    
+	  11 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1558.996 ; gain = 792.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1697.793 ; gain = 931.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1745.039 ; gain = 978.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1745.039 ; gain = 978.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     3|
+|4     |LUT2   |    15|
+|5     |LUT3   |    16|
+|6     |LUT4   |    80|
+|7     |LUT5   |    33|
+|8     |LUT6   |   111|
+|9     |MUXF7  |     1|
+|10    |FDCE   |   223|
+|11    |FDPE   |    23|
+|12    |IBUF   |    17|
+|13    |OBUF   |    21|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:00 . Memory (MB): peak = 1993.883 ; gain = 1150.391
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1993.883 ; gain = 1227.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2003.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2006.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 31a3dbac
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+31 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 2006.777 ; gain = 1423.473
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2006.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Downloads/Project_Vivado/ADC and TIMER INTEGRATION WITH 8 CPU/ADC and TIMER INTEGRATION WITH 8 CPU.runs/synth_1/timer_adc8_cpu_if.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file timer_adc8_cpu_if_utilization_synth.rpt -pb timer_adc8_cpu_if_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 00:13:02 2026...

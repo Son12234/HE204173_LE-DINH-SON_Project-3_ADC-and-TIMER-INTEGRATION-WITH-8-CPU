@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_top_behav/xsimk.exe -simmode gui -testplusarg UVM_TESTNAME=tadc_all_test -wdb tb_top_behav.wdb -simrunnum 0 -socket 62166
+Design successfully loaded
+Design Loading Memory Usage: 27164 KB (Peak: 27164 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 44664 KB (Peak: 44664 KB)
+Simulation CPU Usage: 546 ms

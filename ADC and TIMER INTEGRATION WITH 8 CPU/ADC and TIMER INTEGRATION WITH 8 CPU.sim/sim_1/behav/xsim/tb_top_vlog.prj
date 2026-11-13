@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/uvm" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/apb_regs8.v" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sar_adc_ctrl.v" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/sync_fifo.v" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer8.v" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_top.v" \
+"../../../../../../timer_adc8_uvm_vivado_project/timer_adc8_uvm/rtl/timer_adc8_cpu_if.v" \
+
+sv xil_defaultlib  --include "../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/uvm" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/sv/adc_if.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/sv/apb_if.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/sv/bind_timer_adc_sva.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/sv/sar_afe_model.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/uvm/timer_adc_pkg.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/sv/timer_adc_sva.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/uvm/tb_top.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/directed/tb_directed.sv" \
+"../../../../ADC and TIMER INTEGRATION WITH 8 CPU.srcs/sim_1/imports/timer_adc8_uvm/tb/directed/tb_cpu_if.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
